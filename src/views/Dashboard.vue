@@ -6,6 +6,7 @@
         <p>{{user.email}}</p>
         <button @click="logOut">Log out</button>
         <br><br><br>
+        <!-- Data User -->
         <pre>{{user}}</pre>
     </div>
 </template>

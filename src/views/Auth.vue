@@ -1,8 +1,13 @@
 <template>
-  <div>
-    <h1>Sign in</h1>
-    <div id="firebaseui-auth-container"></div>
+<div id="auth">
+  <!-- Login Google -->
+  <div class="container">
+    <div class="notification">
+      <h1>Sign in</h1>
+      <div id="firebaseui-auth-container"></div>
+    </div>
   </div>
+</div>
 </template>
 
 <script>

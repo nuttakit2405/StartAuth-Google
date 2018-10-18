@@ -5,11 +5,13 @@ import auth from '@/auth'
 import Auth from '@/views/Auth'
 import Dashboard from '@/views/Dashboard'
 import Home from '@/views/Home'
+import Page1 from '@/views/Page1'
 
 Vue.use(Router)
 
 var routes = [
   { path: '/home', name: 'home', component: Home },
+  { path: '/page1', name: 'page1', component: Page1 },
   { path: '/auth', name: 'auth', component: Auth, meta: { guestOnly: true } },
   { path: '/dashboard', name: 'dashboard', component: Dashboard, meta: { requireAuth: true } },
   { path: '*', redirect: '/home' }

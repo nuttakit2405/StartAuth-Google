@@ -1,14 +1,17 @@
 <template>
-    <div v-if="user">
-        <h1>Hello USER!</h1>
-        <img :src="user.photoURL" width="100"> <br>
-        <h3>{{user.displayName}}</h3>
-        <p>{{user.email}}</p>
-        <button @click="logOut">Log out</button>
-        <br><br><br>
-        <!-- Data User -->
-        <pre>{{user}}</pre>
+    <div class="auth-success">
+        <div v-if="user">
+            <h1>Hello USER!</h1>
+            <img :src="user.photoURL" width="100"> <br>
+            <h3>{{user.displayName}}</h3>
+            <p>{{user.email}}</p>
+            <button @click="logOut">Log out</button>
+            <br><br><br>
+            <!-- Data User -->
+            <!-- <pre>{{user}}</pre> -->
+        </div>
     </div>
+    
 </template>
 
 <script>
